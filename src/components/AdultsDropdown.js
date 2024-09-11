@@ -32,7 +32,7 @@ const {adults, setAdults} = useContext(RoomContext);
           </Menu.Item>
         )
       })}
-    </Menu.Items>
+    </Menu.Items> 
   </Menu>
 };
 

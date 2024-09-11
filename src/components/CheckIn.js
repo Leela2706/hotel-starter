@@ -19,7 +19,7 @@ const CheckIn = () => {
       <DatePicker
         className='w-full h-full'
         selected={startDate}
-        placeholderText='Check in'
+        placeholderText='Check in'    
         onChange={(date) => setStartDate(date)} />
     </div>
   );
