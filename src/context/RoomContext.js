@@ -14,7 +14,14 @@ const RoomProvider = ({ children }) => {
 
   useEffect(()=> {
     setTotal(Number(adults[0]) + Number(kids[0]));
-  }); 
+    getRoomsData();
+  }, []); 
+
+  const getRoomsData = async() =>{
+    const info = await fetch('http://localhost:3000/roomsData');
+    const rooms = await info.json();
+    setRooms(rooms);
+  }
 
   const handleClick = (e) => {
     e.preventDefault();

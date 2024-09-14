@@ -78,7 +78,7 @@ const RoomDetails = () => {
                   </div>
                 </div>
                 
-                <button className='btn btn-lg btn-primary w-full'>Book now for $(price)</button>
+                <button className='btn btn-lg btn-primary w-full'>Book now for ${price}</button>
 
               </div>
 
