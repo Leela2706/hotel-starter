@@ -10,7 +10,19 @@ import ScrollToTop from '../components/ScrollToTop'
 
 import { RoomContext } from '../context/RoomContext';
 
-import { FaCheck } from 'react-icons/fa';
+// import { FaCheck } from 'react-icons/fa';
+import { FaWifi, FaCoffee, FaBath, FaParking, FaSwimmingPool, FaHotdog, FaStopwatch, FaCocktail, FaCheck } from 'react-icons/fa';
+
+const ICON_MAP = {
+  FaWifi: FaWifi,
+  FaCoffee: FaCoffee,
+  FaBath: FaBath,
+  FaParking: FaParking,
+  FaSwimmingPool: FaSwimmingPool,
+  FaHotdog: FaHotdog,
+  FaStopwatch: FaStopwatch,
+  FaCocktail: FaCocktail
+};
 
 
 
@@ -21,99 +33,110 @@ const RoomDetails = () => {
   const room = rooms.find((room) => {
     return room.id === Number(id);
   });
+  console.log("room", room);
+  if (!room) {
+    return <div>Room Not Found</div>
+  }
 
   const { name, description, facilities, imageLg, price } = room
+  console.log("facilities", facilities);
+
+  const renderIcon = (icon) => {
+    const IconConmponent = ICON_MAP[icon];
+    return <IconConmponent/>
+  }
   return (
     <section>
       <ScrollToTop />
       <div className='bg-room bg-cover bg-center h-[560px] relative flex justify-center items-center'>
         <div className='absolute w-full h-full bg-black/70'></div>
         <h1 className='text-6xl text-white z-20 font-primary text-center'>
-            {name} Details
-          </h1>
-          </div>
+          {name} Details
+        </h1>
+      </div>
 
-        <div className='container mx-auto'>
-          <div className='flex flex-col lg:flex-row h-full py-24'>
-            <div className='w-full h-full px-6 lg:w-[60%]'>
-             <h2 className='h2'>{name}</h2>
-             <p className='mb-8'>{description}</p>
-             <img className='mb-8' src={imageLg}/>
-
-             <div className='mt-12'>
+      <div className='container mx-auto'>
+        <div className='flex flex-col lg:flex-row h-full py-24'>
+          <div className='w-full h-full px-6 lg:w-[60%]'>
+            <h2 className='h2'>{name}</h2>
+            <p className='mb-8'>{description}</p>
+            <img className='mb-8' src={imageLg} />
+            {/* <img className='mb-8' src='/assets/img/rooms/1-lg.png'></img> */}
+            <div className='mt-12'>
               <h3 className='h3 mb-3'>Room Facilities</h3>
               <p className='mb-12'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
 
               <div className='grid grid-cols-3 gap-6 mb-12'>
-                {facilities.map((item,index) => {
+                {facilities.map((item, index) => {
                   const { name, icon } = item;
-                  return(
+                  return (
                     <div className='flex items-center gap-x-3 flex-1' key={index}>
-                    <div className='text-3xl text-accent'>{icon}</div>
-                    <div className='text-base'>{name}</div>
+                      {renderIcon(icon)}
+                      {/* <div className='text-3xl text-accent'>{icon}</div> */}
+                      <div className='text-base'>{name}</div>
                     </div>
                   );
                 })}
               </div>
-             </div>
             </div>
+          </div>
 
-            <div className='w-full h-full lg:w-[40%]'>
-              <div className='py-8 px-6 bg-accent/20 mb-12'>
-                <div className='flex flex-col space-y-4 mb-4'>
-                  <h3>Your Reservation</h3>
-                  <div className='h-[60px]'>
-                    <CheckIn />
-                  </div>
-                  <div className='h-[60px]'>
-                    <CheckOut />
-                  </div>
-                  <div className='h-[60px]'>
-                    <AdultsDropdown />
-                  </div>
-                  <div className='h-[60px]'>
-                    <KidsDropdown />
-                  </div>
+          <div className='w-full h-full lg:w-[40%]'>
+            <div className='py-8 px-6 bg-accent/20 mb-12'>
+              <div className='flex flex-col space-y-4 mb-4'>
+                <h3>Your Reservation</h3>
+                <div className='h-[60px]'>
+                  <CheckIn />
                 </div>
-                
-                <button className='btn btn-lg btn-primary w-full'>Book now for ${price}</button>
-
+                <div className='h-[60px]'>
+                  <CheckOut />
+                </div>
+                <div className='h-[60px]'>
+                  <AdultsDropdown />
+                </div>
+                <div className='h-[60px]'>
+                  <KidsDropdown />
+                </div>
               </div>
 
-                <div>
-                  <h3 className='h3'>Hotel Rules</h3>
-                  <p className='mb-6'>
-                  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute ir
-                  </p>
-                  <ul className='flex flex-col gap-y-4'>
-                    <li className='flex items-center gap-x-4'>
-                      <FaCheck className='text-accent'/>
-                      Check-in: 3:00 PM - 9:00 PM
-                    </li>
+              <button className='btn btn-lg btn-primary w-full'>Book now for ${price}</button>
 
-                    <li className='flex items-center gap-x-4'>
-                      <FaCheck className='text-accent'/>
-                      Check-Out: 10:30 AM
-                    </li>
+            </div>
 
-                    <li className='flex items-center gap-x-4'>
-                      <FaCheck className='text-accent'/>
-                      No Pets
-                    </li>
+            <div>
+              <h3 className='h3'>Hotel Rules</h3>
+              <p className='mb-6'>
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute ir
+              </p>
+              <ul className='flex flex-col gap-y-4'>
+                <li className='flex items-center gap-x-4'>
+                  <FaCheck className='text-accent' />
+                  Check-in: 3:00 PM - 9:00 PM
+                </li>
 
-                    <li className='flex items-center gap-x-4'>
-                      <FaCheck className='text-accent'/>
-                     No Smoking
-                    </li>
-                  </ul>
-                </div>
+                <li className='flex items-center gap-x-4'>
+                  <FaCheck className='text-accent' />
+                  Check-Out: 10:30 AM
+                </li>
 
+                <li className='flex items-center gap-x-4'>
+                  <FaCheck className='text-accent' />
+                  No Pets
+                </li>
+
+                <li className='flex items-center gap-x-4'>
+                  <FaCheck className='text-accent' />
+                  No Smoking
+                </li>
+              </ul>
             </div>
 
           </div>
+
         </div>
+      </div>
     </section>
   )
 };

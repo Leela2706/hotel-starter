@@ -5,7 +5,7 @@ import { roomData } from '../data';
 export const RoomContext = createContext()
 
 const RoomProvider = ({ children }) => {
-  const [rooms, setRooms] = useState(roomData);
+  const [rooms, setRooms] = useState([]);
   // console.log(rooms);
   const[adults, setAdults] = useState ('1 Adult');
   const[kids, setKids] = useState ('0 Kids');
@@ -19,8 +19,9 @@ const RoomProvider = ({ children }) => {
 
   const getRoomsData = async() =>{
     const info = await fetch('http://localhost:3000/roomsData');
-    const rooms = await info.json();
-    setRooms(rooms);
+    const data = await info.json();
+  console.log("rooms", rooms)
+    setRooms(data.rooms);
   }
 
   const handleClick = (e) => {

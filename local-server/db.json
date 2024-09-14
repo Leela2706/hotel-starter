@@ -35,8 +35,8 @@
             "size": 30,
             "maxPerson": 1,
             "price": 115,
-            "image": "Room1Img",
-            "imageLg": "Room1ImgLg"
+            "image": "./assets/img/rooms/1.png",
+            "imageLg": "/assets/img/rooms/1-lg.png"
           },
           {
             "id": 2,
@@ -55,8 +55,8 @@
             "size": 70,
             "maxPerson": 2,
             "price": 220,
-            "image": "Room2Img",
-            "imageLg": "Room2ImgLg"
+            "image": "./assets/img/rooms/2.png",
+            "imageLg": "/assets/img/rooms/2-lg.png"
           },
           {
             "id": 3,
@@ -75,8 +75,8 @@
             "size": 50,
             "maxPerson": 3,
             "price": 265,
-            "image": "Room3Img",
-            "imageLg": "Room3ImgLg"
+            "image": "./assets/img/rooms/3.png",
+            "imageLg": "/assets/img/rooms/3-lg.png"
           },
           {
             "id": 4,
@@ -95,8 +95,8 @@
             "size": 50,
             "maxPerson": 4,
             "price": 289,
-            "image": "Room4Img",
-            "imageLg": "Room4ImgLg"
+            "image": "./assets/img/rooms/4.png",
+            "imageLg": "/assets/img/rooms/4-lg.png"
           },
           {
             "id": 5,
@@ -115,8 +115,8 @@
             "size": 90,
             "maxPerson": 5,
             "price": 320,
-            "image": "Room5Img",
-            "imageLg": "Room5ImgLg"
+            "image": "./assets/img/rooms/5.png",
+            "imageLg": "/assets/img/rooms/5-lg.png"
           },
           {
             "id": 6,
@@ -135,8 +135,8 @@
             "size": 45,
             "maxPerson": 6,
             "price": 344,
-            "image": "Room6Img",
-            "imageLg": "Room6ImgLg"
+            "image": "./assets/img/rooms/6.png",
+            "imageLg": "/assets/img/rooms/6-lg.png"
           },
           {
             "id": 7,
@@ -155,8 +155,8 @@
             "size": 84,
             "maxPerson": 7,
             "price": 389,
-            "image": "Room7Img",
-            "imageLg": "Room7ImgLg"
+            "image": "./assets/img/rooms/7.png",
+            "imageLg": "/assets/img/rooms/7-lg.png"
           },
           {
             "id": 8,
@@ -175,8 +175,8 @@
             "size": 48,
             "maxPerson": 8,
             "price": 499,
-            "image": "Room8Img",
-            "imageLg": "Room8ImgLg"
+            "image": "./assets/img/rooms/8.png",
+            "imageLg": "/assets/img/rooms/8-lg.png"
           }
         ]
       }

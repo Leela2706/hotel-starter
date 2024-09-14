@@ -7,6 +7,7 @@ import { SpinnerDotted } from 'spinners-react'
 
 const Rooms = () => {
   const { rooms, loading } = useContext(RoomContext);
+  console.log(rooms)
   return (
     <section className='py-24'>
 

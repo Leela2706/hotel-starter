@@ -17,7 +17,7 @@ const Header = () => {
   const getMenuOptions = async () => {
     const response = await fetch("http://localhost:3000/menuOptions");
     const menuInfo = await response.json();
-    setMenuOptions(menuInfo)
+    setMenuOptions(menuInfo);
   }
   return (
     <header className={`${header ? 'bg-white py-6 shadow-lg' : 'bg-transparent py-8'} fixed z-50 w-full transition-all duration-500`}>
