@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import LogoWhite from '../assets/img/logo-white.svg'
 import LogoDark from '../assets/img/logo-dark.svg'
@@ -30,13 +31,14 @@ const Header = () => {
         </a>
 
         <nav className={`${header ? 'text-primary' : 'text-white'} flex gap-x-4 font-tertiary tracking-[3px] text-[15px] items-center uppercase lg:gap-x-8`}>
-          {menuOptions.map((menu) =>{
-                return (
-                  <a href='' className='hover:text-accent transition'>
-                {menu.name}
-              </a>
-                )
-              })}
+          {menuOptions.map((menu) => {
+            return (
+              // <a href='' className='hover:text-accent transition'>
+              //   {menu.name}
+              // </a>
+              <Link to={`${menu.path}`}>{menu.name}</Link>
+            )
+          })}
         </nav>
       </div>
     </header>
