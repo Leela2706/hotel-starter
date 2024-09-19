@@ -1,379 +1,361 @@
 {
   "menuOptions": [
     {
-      "name": "Home"
+      "name": "Home",
+      "id": "71d9"
     },
     {
-      "name": "Rooms"
+      "name": "Rooms",
+      "id": "4688"
     },
     {
-      "name": "Restuarent"
+      "name": "Restuarent",
+      "id": "8675"
     },
     {
-      "name": "Spa"
+      "name": "Spa",
+      "id": "7e45"
     },
     {
-      "name": "Contact US"
+      "name": "Contact US",
+      "id": "f8c0"
     },
     {
       "name": "Manage Hotel",
-      "path":"managehotel"
+      "path": "managehotel",
+      "id": "656a"
     }
   ],
-  "roomsData": {
-    "rooms": [
-      {
-        "id": 1,
-        "name": "Superior Room",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
-        "facilities": [
-          {
-            "name": "Wifi",
-            "icon": "FaWifi"
-          },
-          {
-            "name": "Coffee",
-            "icon": "FaCoffee"
-          },
-          {
-            "name": "Bath",
-            "icon": "FaBath"
-          },
-          {
-            "name": "Parking Space",
-            "icon": "FaParking"
-          },
-          {
-            "name": "Swimming Pool",
-            "icon": "FaSwimmingPool"
-          },
-          {
-            "name": "Breakfast",
-            "icon": "FaHotdog"
-          },
-          {
-            "name": "GYM",
-            "icon": "FaStopwatch"
-          },
-          {
-            "name": "Drinks",
-            "icon": "FaCocktail"
-          }
-        ],
-        "size": 30,
-        "maxPerson": 1,
-        "price": 115,
-        "image": "./assets/img/rooms/1.png",
-        "imageLg": "/assets/img/rooms/1-lg.png"
-      },
-      {
-        "id": 2,
-        "name": "Signature Room",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
-        "facilities": [
-          {
-            "name": "Wifi",
-            "icon": "FaWifi"
-          },
-          {
-            "name": "Coffee",
-            "icon": "FaCoffee"
-          },
-          {
-            "name": "Bath",
-            "icon": "FaBath"
-          },
-          {
-            "name": "Parking Space",
-            "icon": "FaParking"
-          },
-          {
-            "name": "Swimming Pool",
-            "icon": "FaSwimmingPool"
-          },
-          {
-            "name": "Breakfast",
-            "icon": "FaHotdog"
-          },
-          {
-            "name": "GYM",
-            "icon": "FaStopwatch"
-          },
-          {
-            "name": "Drinks",
-            "icon": "FaCocktail"
-          }
-        ],
-        "size": 70,
-        "maxPerson": 2,
-        "price": 220,
-        "image": "./assets/img/rooms/2.png",
-        "imageLg": "/assets/img/rooms/2-lg.png"
-      },
-      {
-        "id": 3,
-        "name": "Deluxe Room",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
-        "facilities": [
-          {
-            "name": "Wifi",
-            "icon": "FaWifi"
-          },
-          {
-            "name": "Coffee",
-            "icon": "FaCoffee"
-          },
-          {
-            "name": "Bath",
-            "icon": "FaBath"
-          },
-          {
-            "name": "Parking Space",
-            "icon": "FaParking"
-          },
-          {
-            "name": "Swimming Pool",
-            "icon": "FaSwimmingPool"
-          },
-          {
-            "name": "Breakfast",
-            "icon": "FaHotdog"
-          },
-          {
-            "name": "GYM",
-            "icon": "FaStopwatch"
-          },
-          {
-            "name": "Drinks",
-            "icon": "FaCocktail"
-          }
-        ],
-        "size": 50,
-        "maxPerson": 3,
-        "price": 265,
-        "image": "./assets/img/rooms/3.png",
-        "imageLg": "/assets/img/rooms/3-lg.png"
-      },
-      {
-        "id": 4,
-        "name": "Luxury Room",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
-        "facilities": [
-          {
-            "name": "Wifi",
-            "icon": "FaWifi"
-          },
-          {
-            "name": "Coffee",
-            "icon": "FaCoffee"
-          },
-          {
-            "name": "Bath",
-            "icon": "FaBath"
-          },
-          {
-            "name": "Parking Space",
-            "icon": "FaParking"
-          },
-          {
-            "name": "Swimming Pool",
-            "icon": "FaSwimmingPool"
-          },
-          {
-            "name": "Breakfast",
-            "icon": "FaHotdog"
-          },
-          {
-            "name": "GYM",
-            "icon": "FaStopwatch"
-          },
-          {
-            "name": "Drinks",
-            "icon": "FaCocktail"
-          }
-        ],
-        "size": 50,
-        "maxPerson": 4,
-        "price": 289,
-        "image": "./assets/img/rooms/4.png",
-        "imageLg": "/assets/img/rooms/4-lg.png"
-      },
-      {
-        "id": 5,
-        "name": "Luxury Suite Room",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
-        "facilities": [
-          {
-            "name": "Wifi",
-            "icon": "FaWifi"
-          },
-          {
-            "name": "Coffee",
-            "icon": "FaCoffee"
-          },
-          {
-            "name": "Bath",
-            "icon": "FaBath"
-          },
-          {
-            "name": "Parking Space",
-            "icon": "FaParking"
-          },
-          {
-            "name": "Swimming Pool",
-            "icon": "FaSwimmingPool"
-          },
-          {
-            "name": "Breakfast",
-            "icon": "FaHotdog"
-          },
-          {
-            "name": "GYM",
-            "icon": "FaStopwatch"
-          },
-          {
-            "name": "Drinks",
-            "icon": "FaCocktail"
-          }
-        ],
-        "size": 90,
-        "maxPerson": 5,
-        "price": 320,
-        "image": "./assets/img/rooms/5.png",
-        "imageLg": "/assets/img/rooms/5-lg.png"
-      },
-      {
-        "id": 6,
-        "name": "Deluxe Room",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
-        "facilities": [
-          {
-            "name": "Wifi",
-            "icon": "FaWifi"
-          },
-          {
-            "name": "Coffee",
-            "icon": "FaCoffee"
-          },
-          {
-            "name": "Bath",
-            "icon": "FaBath"
-          },
-          {
-            "name": "Parking Space",
-            "icon": "FaParking"
-          },
-          {
-            "name": "Swimming Pool",
-            "icon": "FaSwimmingPool"
-          },
-          {
-            "name": "Breakfast",
-            "icon": "FaHotdog"
-          },
-          {
-            "name": "GYM",
-            "icon": "FaStopwatch"
-          },
-          {
-            "name": "Drinks",
-            "icon": "FaCocktail"
-          }
-        ],
-        "size": 45,
-        "maxPerson": 6,
-        "price": 344,
-        "image": "./assets/img/rooms/6.png",
-        "imageLg": "/assets/img/rooms/6-lg.png"
-      },
-      {
-        "id": 7,
-        "name": "Luxury Room",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
-        "facilities": [
-          {
-            "name": "Wifi",
-            "icon": "FaWifi"
-          },
-          {
-            "name": "Coffee",
-            "icon": "FaCoffee"
-          },
-          {
-            "name": "Bath",
-            "icon": "FaBath"
-          },
-          {
-            "name": "Parking Space",
-            "icon": "FaParking"
-          },
-          {
-            "name": "Swimming Pool",
-            "icon": "FaSwimmingPool"
-          },
-          {
-            "name": "Breakfast",
-            "icon": "FaHotdog"
-          },
-          {
-            "name": "GYM",
-            "icon": "FaStopwatch"
-          },
-          {
-            "name": "Drinks",
-            "icon": "FaCocktail"
-          }
-        ],
-        "size": 84,
-        "maxPerson": 7,
-        "price": 389,
-        "image": "./assets/img/rooms/7.png",
-        "imageLg": "/assets/img/rooms/7-lg.png"
-      },
-      {
-        "id": 8,
-        "name": "Deluxe Room",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
-        "facilities": [
-          {
-            "name": "Wifi",
-            "icon": "FaWifi"
-          },
-          {
-            "name": "Coffee",
-            "icon": "FaCoffee"
-          },
-          {
-            "name": "Bath",
-            "icon": "FaBath"
-          },
-          {
-            "name": "Parking Space",
-            "icon": "FaParking"
-          },
-          {
-            "name": "Swimming Pool",
-            "icon": "FaSwimmingPool"
-          },
-          {
-            "name": "Breakfast",
-            "icon": "FaHotdog"
-          },
-          {
-            "name": "GYM",
-            "icon": "FaStopwatch"
-          },
-          {
-            "name": "Drinks",
-            "icon": "FaCocktail"
-          }
-        ],
-        "size": 48,
-        "maxPerson": 8,
-        "price": 499,
-        "image": "./assets/img/rooms/8.png",
-        "imageLg": "/assets/img/rooms/8-lg.png"
-      }
-    ]
-  }
+  "roomsData": [
+    {
+      "id": "1",
+      "name": "Superior Room",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
+      "facilities": [
+        {
+          "name": "Wifi",
+          "icon": "FaWifi"
+        },
+        {
+          "name": "Coffee",
+          "icon": "FaCoffee"
+        },
+        {
+          "name": "Bath",
+          "icon": "FaBath"
+        },
+        {
+          "name": "Parking Space",
+          "icon": "FaParking"
+        },
+        {
+          "name": "Swimming Pool",
+          "icon": "FaSwimmingPool"
+        },
+        {
+          "name": "Breakfast",
+          "icon": "FaHotdog"
+        },
+        {
+          "name": "GYM",
+          "icon": "FaStopwatch"
+        },
+        {
+          "name": "Drinks",
+          "icon": "FaCocktail"
+        }
+      ],
+      "size": 30,
+      "maxPerson": 1,
+      "price": 115,
+      "image": "https://t3.ftcdn.net/jpg/02/71/08/28/360_F_271082810_CtbTjpnOU3vx43ngAKqpCPUBx25udBrg.jpg",
+      "imageLg": "/assets/img/rooms/1-lg.png"
+    },
+    {
+      "id": "2",
+      "name": "Signature Room",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
+      "facilities": [
+        {
+          "name": "Wifi",
+          "icon": "FaWifi"
+        },
+        {
+          "name": "Coffee",
+          "icon": "FaCoffee"
+        },
+        {
+          "name": "Bath",
+          "icon": "FaBath"
+        },
+        {
+          "name": "Parking Space",
+          "icon": "FaParking"
+        },
+        {
+          "name": "Swimming Pool",
+          "icon": "FaSwimmingPool"
+        },
+        {
+          "name": "Breakfast",
+          "icon": "FaHotdog"
+        },
+        {
+          "name": "GYM",
+          "icon": "FaStopwatch"
+        },
+        {
+          "name": "Drinks",
+          "icon": "FaCocktail"
+        }
+      ],
+      "size": 70,
+      "maxPerson": 2,
+      "price": 220,
+      "image": "./assets/img/rooms/2.png",
+      "imageLg": "/assets/img/rooms/2-lg.png"
+    },
+    {
+      "id": 3,
+      "name": "Deluxe Room",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
+      "facilities": [
+        {
+          "name": "Wifi",
+          "icon": "FaWifi"
+        },
+        {
+          "name": "Coffee",
+          "icon": "FaCoffee"
+        },
+        {
+          "name": "Bath",
+          "icon": "FaBath"
+        },
+        {
+          "name": "Parking Space",
+          "icon": "FaParking"
+        },
+        {
+          "name": "Swimming Pool",
+          "icon": "FaSwimmingPool"
+        },
+        {
+          "name": "Breakfast",
+          "icon": "FaHotdog"
+        },
+        {
+          "name": "GYM",
+          "icon": "FaStopwatch"
+        },
+        {
+          "name": "Drinks",
+          "icon": "FaCocktail"
+        }
+      ],
+      "size": 50,
+      "maxPerson": 3,
+      "price": 265,
+      "image": "./assets/img/rooms/3.png",
+      "imageLg": "./assets/img/rooms/4-lg.png"
+    },
+    {
+      "id": "4",
+      "name": "Luxury Room",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
+      "facilities": [
+        {
+          "name": "Wifi",
+          "icon": "FaWifi"
+        },
+        {
+          "name": "Coffee",
+          "icon": "FaCoffee"
+        },
+        {
+          "name": "Bath",
+          "icon": "FaBath"
+        },
+        {
+          "name": "Parking Space",
+          "icon": "FaParking"
+        },
+        {
+          "name": "Swimming Pool",
+          "icon": "FaSwimmingPool"
+        },
+        {
+          "name": "Breakfast",
+          "icon": "FaHotdog"
+        },
+        {
+          "name": "GYM",
+          "icon": "FaStopwatch"
+        },
+        {
+          "name": "Drinks",
+          "icon": "FaCocktail"
+        }
+      ],
+      "size": 50,
+      "maxPerson": 4,
+      "price": 289,
+      "image": "./assets/img/rooms/4.png",
+      "imageLg": "/assets/img/rooms/4-lg.png"
+    },
+    {
+      "id": "5",
+      "name": "Luxury Suite Room",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
+      "facilities": [
+        {
+          "name": "Wifi",
+          "icon": "FaWifi"
+        },
+        {
+          "name": "Coffee",
+          "icon": "FaCoffee"
+        },
+        {
+          "name": "Bath",
+          "icon": "FaBath"
+        },
+        {
+          "name": "Parking Space",
+          "icon": "FaParking"
+        },
+        {
+          "name": "Swimming Pool",
+          "icon": "FaSwimmingPool"
+        },
+        {
+          "name": "Breakfast",
+          "icon": "FaHotdog"
+        },
+        {
+          "name": "GYM",
+          "icon": "FaStopwatch"
+        },
+        {
+          "name": "Drinks",
+          "icon": "FaCocktail"
+        }
+      ],
+      "size": 90,
+      "maxPerson": 5,
+      "price": 320,
+      "image": "./assets/img/rooms/5.png",
+      "imageLg": "/assets/img/rooms/5-lg.png"
+    },
+    {
+      "id": "6",
+      "name": "Deluxe Room",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
+      "facilities": [
+        {
+          "name": "Wifi",
+          "icon": "FaWifi"
+        },
+        {
+          "name": "Coffee",
+          "icon": "FaCoffee"
+        },
+        {
+          "name": "Bath",
+          "icon": "FaBath"
+        },
+        {
+          "name": "Parking Space",
+          "icon": "FaParking"
+        },
+        {
+          "name": "Swimming Pool",
+          "icon": "FaSwimmingPool"
+        },
+        {
+          "name": "Breakfast",
+          "icon": "FaHotdog"
+        },
+        {
+          "name": "GYM",
+          "icon": "FaStopwatch"
+        },
+        {
+          "name": "Drinks",
+          "icon": "FaCocktail"
+        }
+      ],
+      "size": 45,
+      "maxPerson": 6,
+      "price": 344,
+      "image": "./assets/img/rooms/6.png",
+      "imageLg": "/assets/img/rooms/6-lg.png"
+    },
+    {
+      "id": "7",
+      "name": "Luxury Room",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
+      "facilities": [
+        {
+          "name": "Wifi",
+          "icon": "FaWifi"
+        },
+        {
+          "name": "Coffee",
+          "icon": "FaCoffee"
+        },
+        {
+          "name": "Bath",
+          "icon": "FaBath"
+        },
+        {
+          "name": "Parking Space",
+          "icon": "FaParking"
+        },
+        {
+          "name": "Swimming Pool",
+          "icon": "FaSwimmingPool"
+        },
+        {
+          "name": "Breakfast",
+          "icon": "FaHotdog"
+        },
+        {
+          "name": "GYM",
+          "icon": "FaStopwatch"
+        },
+        {
+          "name": "Drinks",
+          "icon": "FaCocktail"
+        }
+      ],
+      "size": 70,
+      "maxPerson": 8,
+      "price": 369,
+      "image": "./assets/img/rooms/7.png",
+      "imageLg": "/assets/img/rooms/7-lg.png"
+    },
+    {
+      "id": "12",
+      "name": "Suite Room",
+      "description": "All our guestrooms are elegantly furnished with handmade furniture include luxury -suite facilities with complimentary amenities pack",
+      "facilities": "everything",
+      "size": "90",
+      "maxPersons": "3",
+      "price": "999",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/446500284.jpg?k=0841f7ea13c00a2e1d56e348b176576ec366732a6473c6ab491a63d2e5e6a2db&o=&hp=1",
+      "imageLg": "https://clavertonhotel.co.uk/wp-content/uploads/2015/10/King-Size-Four-Poster.jpg"
+    },
+    {
+      "id": "13",
+      "name": "effffffffff",
+      "description": "One room is good for people who stays for longer time with good comfort and luxury",
+      "facilities": "everything",
+      "size": "75",
+      "maxPersons": "3",
+      "price": "899",
+      "image": "https://clavertonhotel.co.uk/wp-content/uploads/2015/10/King-Size-Sleigh-Bed.jpg",
+      "imageLg": "https://clavertonhotel.co.uk/wp-content/uploads/2015/10/King-Size-Sleigh-Bed.jpg"
+    }
+  ]
 }

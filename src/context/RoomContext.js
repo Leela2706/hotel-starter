@@ -20,8 +20,8 @@ const RoomProvider = ({ children }) => {
   const getRoomsData = async() =>{
     const info = await fetch('http://localhost:3000/roomsData');
     const data = await info.json();
-  console.log("rooms", rooms)
-    setRooms(data.rooms);
+  console.log("roomsdata ", data)
+    setRooms(data);
   }
 
   const handleClick = (e) => {
